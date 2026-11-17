@@ -430,3 +430,10 @@ h2 em{font-style:normal;color:var(--a);transition:color .6s}
 /* buttons row can run wider than the text column */
 .panel-copy .links{width:max-content;max-width:min(860px,88vw)}
 @media (max-width:900px){.panel-copy .links{width:auto;max-width:100%}}
+
+/* timeline spine: first dot to last dot only */
+.sp::before{top:var(--sp-top,0)!important;bottom:var(--sp-bot,0)!important}
+@media (max-width:860px){.sp::before{margin-left:0}}
+/* game page video */
+.gvideo{padding-top:30px;padding-bottom:30px}
+.gvideo .video{margin:14px auto}

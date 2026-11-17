@@ -9,7 +9,7 @@
   root.style.setProperty("--ink", g.colors.ink);
   const brandIcon = document.querySelector(".brand img");
   if (brandIcon && g.icon) { brandIcon.src = g.icon; brandIcon.alt = g.title + " icon"; }
-  document.title = g.title + " — Jorge's Bizarre Adventures";
+  document.title = "JBA";
   document.getElementById("year").textContent = new Date().getFullYear();
 
   const others = games.filter(x => x.id !== g.id);
@@ -45,6 +45,11 @@
           <div class="cs-view"><div class="cs-track" id="csChars">${g.crew.map(c => `<div class="cs-slide" style="background-image:url('${c.bg}')">${c.sprite ? `<div class="sprite" role="img" aria-label="${c.name}" style="background-image:url('${c.sprite}')"></div>` : `<img class="${c.full ? "full" : ""}" src="${c.img}" alt="${c.name}">`}</div>`).join("")}</div></div>
         </div>
       </div>
+    </section>` : ""}
+    ${g.video ? `<section class="gvideo wrap" style="--pa:${g.colors.a}">
+      <p class="eyebrow">Video</p>
+      <div class="video" id="gVideo" data-id="${g.video}"></div>
+      <p class="video-link"><a href="https://www.youtube.com/watch?v=${g.video}" target="_blank" rel="noopener">Watch on YouTube ↗</a></p>
     </section>` : ""}
     ${g.screenshots ? `<section class="shots wrap" style="--pa:${g.colors.a}">
       <p class="eyebrow">Screenshots</p>
@@ -121,5 +126,18 @@
     let sx = null;
     lb.addEventListener("touchstart", e => sx = e.touches[0].clientX, { passive: true });
     lb.addEventListener("touchend", e => { if (sx === null) return; const dx = e.changedTouches[0].clientX - sx; sx = null; if (Math.abs(dx) > 50) go(i + (dx < 0 ? 1 : -1)); });
+  }
+})();
+
+(function () {
+  const box = document.getElementById("gVideo"); if (!box) return;
+  const id = box.dataset.id, url = "https://www.youtube.com/watch?v=" + id;
+  if (location.protocol === "http:" || location.protocol === "https:") {
+    box.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${id}" title="Video" loading="lazy"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+  } else {
+    box.innerHTML = `<a class="video-poster" href="${url}" target="_blank" rel="noopener" aria-label="Watch the video on YouTube">
+      <img src="https://img.youtube.com/vi/${id}/hqdefault.jpg" alt=""><span class="play"></span></a>`;
   }
 })();

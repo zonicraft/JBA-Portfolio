@@ -96,6 +96,7 @@ window.JBA = {
         { name: "Moreira", role: "Second in command", text: "Second in command of the gang, always ready for a fight when the search for Nuno gets dangerous.", img: "assets/jba origins/crew/moreira.png", bg: "assets/jba origins/crew/bg.jpg", full: true },
         { name: "Gardete", role: "FBI general", text: "Brings his FBI general know-how to the search for Nuno.", img: "assets/jba origins/crew/gardete.png", bg: "assets/jba origins/crew/bg.jpg", full: true }
       ],
+      video: "rQbHMcfcEd0",
       links: [
         { label: "View on CurseForge", href: "https://www.curseforge.com/minecraft/modpacks/jba-origins" }
       ]
@@ -104,7 +105,7 @@ window.JBA = {
       id: "pokemon",
       order: "02",
       title: "Pokémon JBA Version",
-      subtitle: "Gotta catch all of them",
+      subtitle: "Gotta alter them all",
       status: "Playable",
       platform: "Browser · Windows · Linux · Android",
       genre: "Monster-collecting RPG",

@@ -23,6 +23,13 @@
     }
   })();
 
+  // spine runs only from the first dot to the last dot
+  const fitSpine = () => {
+    const sp = $("timeline"), dots = sp.querySelectorAll(".sp-dot"); if (dots.length < 2) return;
+    const c = d => d.parentElement.offsetTop + d.offsetTop + d.offsetHeight / 2;
+    sp.style.setProperty("--sp-top", c(dots[0]) + "px");
+    sp.style.setProperty("--sp-bot", (sp.offsetHeight - c(dots[dots.length - 1])) + "px");
+  };
   // series timeline (center spine), in story order; cards alternate left / right
   $("timeline").innerHTML = D.chronology.map((c, i) => {
     const g = D.games.find(x => x.id === c.id);
@@ -39,6 +46,7 @@
       <div class="sp-side">${card}</div><span class="sp-link"></span><span class="sp-dot"></span><div class="sp-empty"></div>
     </li>` + flag;
   }).join("");
+  fitSpine(); addEventListener("load", fitSpine); addEventListener("resize", fitSpine);
 
   /* ---------- stacked game panels ---------- */
   const games = [...D.games].sort((a, b) => a.order.localeCompare(b.order));
