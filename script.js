@@ -2,7 +2,7 @@
   const D = window.JBA;
   const $ = (id) => document.getElementById(id);
   const root = document.documentElement;
-  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const reduce = false; // animations always play
   
   /* ---------- static content ---------- */
   $("tagline").textContent = D.series.tagline;
