@@ -61,7 +61,7 @@ window.JBA = {
       links: [
         { label: "Play on itch.io", href: "https://zonicraft.itch.io/jba" },
         { label: "VNDB page", href: "https://vndb.org/v43381", secondary: true },
-        { label: "Steam assets", href: "https://imgur.com/a/jba-steam-assets-blpjxs4", secondary: true }
+        { label: "Steam assets", href: "https://imgur.com/gallery/jba-steam-assets-blpjxs4", secondary: true }
       ]
     },
     {
@@ -100,14 +100,14 @@ window.JBA = {
       video: "rQbHMcfcEd0",
       links: [
         { label: "View on CurseForge", href: "https://www.curseforge.com/minecraft/modpacks/jba-origins" },
-        { label: "Steam assets", href: "https://imgur.com/a/jba-origins-steam-assets-JdQ5PNe", secondary: true }
+        { label: "Steam assets", href: "https://imgur.com/gallery/jba-origins-steam-assets-JdQ5PNe", secondary: true }
       ]
     },
     {
       id: "pokemon",
       order: "02",
       title: "Pokémon JBA Version",
-      subtitle: "Gotta alter them all",
+      subtitle: "Gotta catch all of them",
       status: "Playable",
       platform: "Browser · Windows · Linux · Android",
       genre: "Monster-collecting RPG",
@@ -143,7 +143,7 @@ window.JBA = {
         { label: "Read the book (Português)", href: "https://drive.google.com/file/d/1_Yac-RwT4q4cfgxAz9JpgjsHh7_ZFm82/view?usp=sharing", secondary: true },
         { label: "Read the book (English)", href: "https://drive.google.com/file/d/1wf56hsoG0pBAwASKji2ZmPKVjY8FMX-M/view?usp=sharing", secondary: true },
         { label: "View on GitHub", href: "https://github.com/zonicraft/JBA-PK", secondary: true },
-        { label: "Steam assets", href: "https://imgur.com/a/jba-pokemon-steam-assets-gOogjga", secondary: true }
+        { label: "Steam assets", href: "https://imgur.com/gallery/jba-pk-steam-assets-cjJmOLp", secondary: true }
       ]
     }
   ],
