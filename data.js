@@ -59,9 +59,10 @@ window.JBA = {
         { name: "Gardete", role: "FBI general", text: "General of the FBI's Alpha squad, in charge of the efforts to capture Jorge.", img: "assets/jba/crew/policiadoido.png", bg: "assets/jba/crew/bg/salafbi.jpg" }
       ],
       links: [
-        { label: "Play on itch.io", href: "https://zonicraft.itch.io/jba" },
-        { label: "VNDB page", href: "https://vndb.org/v43381", secondary: true },
-        { label: "Steam assets", href: "https://imgur.com/gallery/jba-steam-assets-blpjxs4", secondary: true }
+        { label: "Play now", href: "https://wavedash.com/games/jorges-bizarre-adventures" },
+        { label: "Download", href: "https://zonicraft.itch.io/jba", secondary: true },
+        { label: "VNDB", href: "https://vndb.org/v43381", secondary: true },
+        { label: "Steam Assets", href: "https://imgur.com/gallery/jba-steam-assets-blpjxs4", secondary: true }
       ]
     },
     {
@@ -99,8 +100,8 @@ window.JBA = {
       ],
       video: "rQbHMcfcEd0",
       links: [
-        { label: "View on CurseForge", href: "https://www.curseforge.com/minecraft/modpacks/jba-origins" },
-        { label: "Steam assets", href: "https://imgur.com/gallery/jba-origins-steam-assets-JdQ5PNe", secondary: true }
+        { label: "CurseForge", href: "https://www.curseforge.com/minecraft/modpacks/jba-origins" },
+        { label: "Steam Assets", href: "https://imgur.com/gallery/jba-origins-steam-assets-JdQ5PNe", secondary: true }
       ]
     },
     {
@@ -140,10 +141,10 @@ window.JBA = {
       icon: "assets/jba pokemon/icon-512.png",
       links: [
         { label: "Play now", href: "https://zonicraft.github.io/JBA-PK/" },
-        { label: "Read the book (Português)", href: "https://drive.google.com/file/d/1_Yac-RwT4q4cfgxAz9JpgjsHh7_ZFm82/view?usp=sharing", secondary: true },
-        { label: "Read the book (English)", href: "https://drive.google.com/file/d/1wf56hsoG0pBAwASKji2ZmPKVjY8FMX-M/view?usp=sharing", secondary: true },
-        { label: "View on GitHub", href: "https://github.com/zonicraft/JBA-PK", secondary: true },
-        { label: "Steam assets", href: "https://imgur.com/gallery/jba-pk-steam-assets-cjJmOLp", secondary: true }
+        { label: "The Book (Português)", href: "https://drive.google.com/file/d/1_Yac-RwT4q4cfgxAz9JpgjsHh7_ZFm82/view?usp=sharing", secondary: true },
+        { label: "The Book (English)", href: "https://drive.google.com/file/d/1wf56hsoG0pBAwASKji2ZmPKVjY8FMX-M/view?usp=sharing", secondary: true },
+        { label: "GitHub", href: "https://github.com/zonicraft/JBA-PK", secondary: true },
+        { label: "Steam Assets", href: "https://imgur.com/gallery/jba-pk-steam-assets-cjJmOLp", secondary: true }
       ]
     }
   ],
