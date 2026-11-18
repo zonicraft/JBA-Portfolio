@@ -144,7 +144,7 @@ window.JBA = {
         { label: "The Book (Português)", href: "https://drive.google.com/file/d/1_Yac-RwT4q4cfgxAz9JpgjsHh7_ZFm82/view?usp=sharing", secondary: true },
         { label: "The Book (English)", href: "https://drive.google.com/file/d/1wf56hsoG0pBAwASKji2ZmPKVjY8FMX-M/view?usp=sharing", secondary: true },
         { label: "GitHub", href: "https://github.com/zonicraft/JBA-PK", secondary: true },
-        { label: "Steam Assets", href: "https://imgur.com/gallery/jba-pk-steam-assets-cjJmOLp", secondary: true }
+        { label: "Steam Assets", href: "https://imgur.com/gallery/jba-pokemon-steam-assets-zKOz98O", secondary: true }
       ]
     }
   ],
